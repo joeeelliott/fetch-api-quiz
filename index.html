@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+  <title>API Project</title>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <h1 id="title">The Sports Quiz!</h1>
+
+  <div class="settings-container">
+    <h2 class="subtitle">Choose Your Settings</h2>
+    
+    <div class="settings-input">
+      <div class="diff-container">
+        <label>Difficulty: </label>
+        <select name="difficulty" id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+          <option value="any">Any Difficulty</option>
+        </select>
+      </div>
+      
+      <div class="num-of-questions-container">
+        <label>Number of Questions: </label>
+        <input type="number" name="numOfQuestions" id="numOfQuestions" value="20" min="10" max="40" step="10">
+      </div>
+    </div>
+
+    <div class="max-num-questions"></div>
+  </div>
+
+  <div class="question-container hide"></div>
+
+  <div class="answers-container hide">
+    <button class="answerOne"></button>
+    <button class="answerTwo"></button>
+    <button class="answerThree"></button>
+    <button class="answerFour"></button>
+  </div>
+
+  <div class="gameplay-btns-container">
+    <button class="startBtn">Start Quiz</button>
+    <div class="question-count-container hide">
+      <h2 class="question-count"></h2>
+      <p class="question-count-text">Question</p>
+    </div>
+    <div class="lives-container hide">
+      <h2 class="lives"></h2>
+      <p class="lives-text">Lives Left</p>
+    </div>
+  </div>
+
+  <div class="modal-container hide">
+    <div class="modal-content">
+      <h1 class="modal-title"></h1>
+      <p class="modal-text"></p>
+      <button class="play-again">Play Again</button>
+    </div>
+  </div>
+
+  <div class="settings-modal hide">
+    <div class="settings-modal-content">
+      <p class="settings-modal-title">The settings you chose are invalid. <br> Please see the message in brackets and choose again.</p>
+      <button class="okay-btn">Okay</button>
+    </div>
+  </div>
+</body>
+</html>
